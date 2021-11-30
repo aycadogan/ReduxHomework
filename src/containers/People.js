@@ -24,7 +24,11 @@ const People = ({peopleProps, addPerson, deletePerson}) => {
 }
 
 const mapStateToProps = (state) => {
-    return { peopleProps: state.people}
+    console.log(state);
+    return { 
+        peopleProps: state.people.people
+
+    }
 }
 
 const mapDispatchToProps = (dispatch) => {
